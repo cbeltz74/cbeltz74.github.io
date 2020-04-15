@@ -2,6 +2,21 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+/* body {
+    background-image: url(/images/baseball_background_blur.jpeg);
+    background-repeat: no-repeat;
+} */
+
+body {
+    background-color: #FFC163;
+}
+
+/* 
+.baseball {
+    width:40%;
+    margin-left:20rem;
+} */
+
 a {
     text-decoration: none;
 }
@@ -22,7 +37,7 @@ nav ul {
 
 nav li {
     width:10rem;
-    background-color: #FF7D73;
+    background-color: white;
     text-align:center;
     margin-bottom:0.5rem;
     display:inline-block;
@@ -32,7 +47,7 @@ nav li {
 
 nav li:hover {
     background-color:white;
-    color:red;
+    color: black;
   }
 
 
@@ -72,3 +87,9 @@ blockquote cite {
     font-size: 0.75rem;
 }
 
+
+/* Hobbies  */
+
+.highlights {
+    display:flex;
+}
