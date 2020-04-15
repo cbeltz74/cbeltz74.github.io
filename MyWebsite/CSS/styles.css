@@ -1,5 +1,7 @@
 * {    
-    font-family:Arial, Helvetica, sans-serif;
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 /* body {
@@ -10,6 +12,7 @@
 body {
     background-color: #FFC163;
 }
+
 
 /* 
 .baseball {
@@ -92,4 +95,29 @@ blockquote cite {
 
 .highlights {
     display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
+
+.highlights_image {
+    width: 75%;
+}
+
+article {
+    /* width:30rem; */
+    flex-basis: 30%;
+    border:1px solid black;
+    text-align:center;
+    font-size: 0.75rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+article h3 {
+    font-size: 1.25rem;
+}
+
