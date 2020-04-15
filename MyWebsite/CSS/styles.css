@@ -1,5 +1,4 @@
 * {    
-    /* font-family:Arial, Helvetica, sans-serif; */
     font-family: 'Quicksand', sans-serif;
 
 }
@@ -9,10 +8,50 @@
     background-repeat: no-repeat;
 } */
 
+header {
+    text-align: center;
+    margin-bottom: -2rem;
+}
+
+.headerText {
+    font-size: 4rem;
+
+
+}
+
 body {
     background-color: #FFC163;
 }
 
+.stories {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+img {
+    border-radius: 25px;
+}
+
+.stories_img {
+    width:18rem;
+    float: right;
+    margin:2rem 1rem 1rem 1rem;
+}
+
+.storyLeft {
+    border-right:1px solid black;
+    border-bottom:3px solid black;
+    border-bottom-right-radius: 45px;
+    flex-basis: 60%;
+    padding:1rem;
+}
+
+.storyRight {
+    /* border-radius: 25px; */
+    flex-basis: 30%;
+    padding:1rem 1rem 1rem 2rem;
+}
 
 /* 
 .baseball {
@@ -46,6 +85,7 @@ nav li {
     display:inline-block;
     font-size:0.75rem;
     padding:0.5rem;
+    border-radius: 25px;
 }
 
 nav li:hover {
@@ -53,6 +93,13 @@ nav li:hover {
     color: black;
   }
 
+  hr {
+      width: 75%;
+      height:2px;
+      background-color: black;
+      border: none;
+
+    }
 
 .floatleft {
     float:left;
@@ -104,13 +151,15 @@ blockquote cite {
 }
 
 article {
-    /* width:30rem; */
     flex-basis: 30%;
-    border:1px solid black;
+    border-bottom:4px solid black;
+    border-right:1px solid black;
+    border-bottom-right-radius: 45px;
+
     text-align:center;
     font-size: 0.75rem;
-    margin-bottom: 2rem;
-    padding: 1rem;
+    margin-bottom: 0.75rem;
+    padding: 0 1rem 1rem 1rem;
 }
 
 li {
@@ -121,3 +170,15 @@ article h3 {
     font-size: 1.25rem;
 }
 
+.sites {
+    display: flex;
+}
+
+.shops {
+    display: flex;
+}
+
+footer {
+    text-align: center;
+    margin: 1rem 0rem;
+}
