@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Contact Me</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
-<body class="aboutMe_background">
+<body class="contact">
     
     <header>
 
@@ -20,7 +20,7 @@
             <ul>
                 <a href="index.html"><li>Home</li></a>
                 <a href="hobbies.html"><li>Hobbies</li></a>
-                <a href="projects.html"><li>Home</li></a>
+                <a href="projects.html"><li>Projects</li></a>
                 <a href="aboutMe.html"><li>About Me</li></a>
                 <a href="contact_form.html"><li>Contact Me</li></a>
             </ul>
@@ -28,28 +28,72 @@
         
     </header>
     
+<div class="wrapper">
+
+    <section>
+
+        <form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="POST">
+
+            <fieldset>
+            <legend>Your contact information</legend>
+                <label for="name">Please enter your name</label>
+                <input type="text" id="name">
+
+                <label for="phone">Your phone number</label>
+                <input type="tel" id="phone">
+
+                <label for="email">Email address</label>
+                <input type="email" id="email">
+            </fieldset>
 
 
-<article>
-    
-<!--  
 
-Create a contact form for your website.
-Use similar styling to your about and hobby pages, and add the contact page.
-In the contact form, ask for name, email, phone number, and have a big area for typing a message. Don't forget a submit button! You may ask for other information if you wish.
-Include a map of your location on this page. (If you don't want to include your exact address, include a map of your city or your country.)
+            <fieldset>
+                <legend>Describe your yearbook</legend>
+                <label for="year">What year do you have?</label>
+                <select>
+                    <option value="1983">1983</option>
+            > <option value="1993">1993</option>
+                    <option value="1995">1995</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                </select>
+
+                    <label for="Comments">Describe yearbook</label>
+                    <textarea id="comments" placeholder="Make sure to include your price."></textarea>
+                
+            </fieldset>        
+
+                <button>Submit</button>
+
+        </form>
+
+    </section>
 
 
--->
+    <aside>
+
+        <ul>
+            <a href="https://codepen.io/cbeltz74/ "><li>Codepen</li></a>
+            <a href="https://twitter.com/ColinBeltz"><li>Twitter</li></a>
+            <a href="https://www.instagram.com/colinbeltz/"><li>Instagram</li></a>
+            <a href="https://github.com/cbeltz74"><li>Github</li></a>
+            <a href="https://www.linkedin.com/in/colinbeltz"><li>LinkedIn</li></a>
+            <a href="https://medium.com/@colinbeltz"><li>Medium</li></a>
+        </ul>
 
 
+    </aside>
 
-</article>
+</div>
 
 <footer>
     <p>Copyright: Colin Beltz</p>
     <br>
 </footer>
+
+
+<script src="js/forms.js"></script>
 
 </body>
 </html>
