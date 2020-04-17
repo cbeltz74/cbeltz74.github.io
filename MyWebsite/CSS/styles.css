@@ -5,21 +5,69 @@
 body, html {
     height:100%;
     margin:0;
+
+    /* background-image: url(/images/baseball_background_blur.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover; */
+
 }
 
+.index_background {
+    background-image: url(/images/baseball_background_blur.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
 
-header {
+.section_headlines {
     text-align: center;
-    margin-bottom: -2rem;
+    margin-top:20rem;
+    color:white;
 }
 
-.headerText {
+.section-name {
     font-size: 4rem;
 }
 
-body {
-    background-color: #F2F2F2;
+.section-position {
+    font-size:1.5rem;
+    font-weight: 700;
 }
+
+.section-position2 {
+    font-weight: 100;
+}
+
+.header-title {
+    text-align: center;
+    color:white;
+    font-size:1.5rem;
+}
+
+.index-footer {
+    margin-top:15rem;
+    color:white;
+}
+
+.color_background {
+    background-color: #2B4D62;
+}
+
+
+.hobbies_background {
+    background-color: #D9C896;
+    }
+    
+    .aboutMe_background {
+        background-color: #B3D5F2;
+    }
+    
+    .contact_background {
+    
+    }
+
+
 
 .stories {
     display:flex;
@@ -78,10 +126,12 @@ nav ul {
 }
 
 nav li {
+    color:white;
     width:10rem;
     text-align:center;
     display:inline-block;
-    font-size:0.75rem;
+    font-size:1rem;
+    font-weight: 800;
     padding:0.5rem;
     border-radius: 25px;
 }
