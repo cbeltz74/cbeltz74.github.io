@@ -1,12 +1,12 @@
 * {    
     font-family: 'Quicksand', sans-serif;
-
 }
 
-/* body {
-    background-image: url(/images/baseball_background_blur.jpeg);
-    background-repeat: no-repeat;
-} */
+body, html {
+    height:100%;
+    margin:0;
+}
+
 
 header {
     text-align: center;
@@ -15,12 +15,10 @@ header {
 
 .headerText {
     font-size: 4rem;
-
-
 }
 
 body {
-    background-color: #FFC163;
+    background-color: #F2F2F2;
 }
 
 .stories {
@@ -47,17 +45,15 @@ img {
     padding:1rem;
 }
 
+.storyLeft h1 {
+    font-size:2rem;
+}
+
 .storyRight {
     /* border-radius: 25px; */
     flex-basis: 30%;
     padding:1rem 1rem 1rem 2rem;
 }
-
-/* 
-.baseball {
-    width:40%;
-    margin-left:20rem;
-} */
 
 a {
     text-decoration: none;
@@ -69,19 +65,21 @@ a:hover {
 
 nav {
     text-align: center;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    margin-bottom:1rem;    
 }
 
 nav ul {
     list-style-type: none;
     padding:0;
     margin:0;
+    
 }
 
 nav li {
     width:10rem;
-    background-color: white;
     text-align:center;
-    margin-bottom:0.5rem;
     display:inline-block;
     font-size:0.75rem;
     padding:0.5rem;
@@ -91,6 +89,7 @@ nav li {
 nav li:hover {
     background-color:white;
     color: black;
+
   }
 
   hr {
@@ -130,7 +129,7 @@ blockquote {
 
 blockquote p {
     font-size: 1.25rem;
-    width:10rem;
+    width:9rem;
 }
 
 blockquote cite {
@@ -182,3 +181,87 @@ footer {
     text-align: center;
     margin: 1rem 0rem;
 }
+
+.About_Me {
+    border:none;
+}
+
+.important li {
+    font-size: 1rem;
+    list-style-type: circle;
+    text-align: left;
+}
+
+.About_Me p {
+    text-align: left;
+}
+
+
+/* Color Theme Swatches in Hex */
+.Tema-Colore-2-1-hex { color: #B3A79A; }
+.Tema-Colore-2-2-hex { color: #2B4D62; }
+.Tema-Colore-2-3-hex { color: #B6AF9D; }
+.Tema-Colore-2-4-hex { color: #F2E7C4; }
+.Tema-Colore-2-5-hex { color: #B6B6AD; }
+
+/* Color Theme Swatches in RGBA */
+.Tema-Colore-2-1-rgba { color: rgba(179, 166, 153, 1); }
+.Tema-Colore-2-2-rgba { color: rgba(43, 76, 97, 1); }
+.Tema-Colore-2-3-rgba { color: rgba(182, 174, 157, 1); }
+.Tema-Colore-2-4-rgba { color: rgba(242, 230, 196, 1); }
+.Tema-Colore-2-5-rgba { color: rgba(181, 182, 173, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Tema-Colore-2-1-hsla { color: hsla(30, 14, 65, 1); }
+.Tema-Colore-2-2-hsla { color: hsla(203, 38, 27, 1); }
+.Tema-Colore-2-3-hsla { color: hsla(41, 14, 66, 1); }
+.Tema-Colore-2-4-hsla { color: hsla(45, 64, 85, 1); }
+.Tema-Colore-2-5-hsla { color: hsla(60, 5, 69, 1); }
+
+
+/* Color Theme Swatches in Hex */
+.Sushi-1-hex { color: #E1E1E1; }
+.Sushi-2-hex { color: #B3D5F2; }
+.Sushi-3-hex { color: #DCE8F2; }
+.Sushi-4-hex { color: #D9C896; }
+.Sushi-5-hex { color: #D99A25; }
+
+/* Color Theme Swatches in RGBA */
+.Sushi-1-rgba { color: rgba(225, 225, 225, 1); }
+.Sushi-2-rgba { color: rgba(179, 213, 242, 1); }
+.Sushi-3-rgba { color: rgba(220, 232, 242, 1); }
+.Sushi-4-rgba { color: rgba(217, 200, 150, 1); }
+.Sushi-5-rgba { color: rgba(217, 154, 37, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Sushi-1-hsla { color: hsla(0, 0, 88, 1); }
+.Sushi-2-hsla { color: hsla(207, 70, 82, 1); }
+.Sushi-3-hsla { color: hsla(207, 45, 90, 1); }
+.Sushi-4-hsla { color: hsla(44, 46, 71, 1); }
+.Sushi-5-hsla { color: hsla(38, 70, 49, 1); }
+
+
+
+
+
+
+/* Color Theme Swatches in Hex */
+.Tema-de-cores-11-1-hex { color: #00040D; }
+.Tema-de-cores-11-2-hex { color: #F2F2F2; }
+.Tema-de-cores-11-3-hex { color: #94A1A6; }
+.Tema-de-cores-11-4-hex { color: #AEBABF; }
+.Tema-de-cores-11-5-hex { color: #C7D4D9; }
+
+/* Color Theme Swatches in RGBA */
+.Tema-de-cores-11-1-rgba { color: rgba(0, 4, 13, 1); }
+.Tema-de-cores-11-2-rgba { color: rgba(242, 242, 242, 1); }
+.Tema-de-cores-11-3-rgba { color: rgba(148, 161, 166, 1); }
+.Tema-de-cores-11-4-rgba { color: rgba(174, 186, 191, 1); }
+.Tema-de-cores-11-5-rgba { color: rgba(199, 212, 217, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Tema-de-cores-11-1-hsla { color: hsla(221, 100, 2, 1); }
+.Tema-de-cores-11-2-hsla { color: hsla(0, 0, 94, 1); }
+.Tema-de-cores-11-3-hsla { color: hsla(196, 9, 61, 1); }
+.Tema-de-cores-11-4-hsla { color: hsla(197, 11, 71, 1); }
+.Tema-de-cores-11-5-hsla { color: hsla(196, 19, 81, 1); }
