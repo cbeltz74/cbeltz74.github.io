@@ -1,36 +1,7 @@
-const BREEDS_URL = "https://dog.ceo/api/breeds/image/random";
-
-function addDoggo () {
-
-    // start loading spinner
-
-    fetch(BREEDS_URL)
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(data) {
-        const img = document.createElement('img');
-        img.src = data.message;
-        img.alt = 'Cute doggo';
-
-        document.querySelector('.doggos').append(img);
-
-        // stop loading spinner
-    })
-    
-}
-
-document.querySelector('.add-doggo').addEventListener
-("click", addDoggo);
-
-
-const BREEDS_LIST_URL = "https://dog.ceo/api/breeds/list/all";
-
+const BREEDS_URL = "https://dog.ceo/api/breeds/list/all";
 const select = document.querySelector('.breeds');
 
-
-
-fetch(BREEDS_LIST_URL)
+fetch(BREEDS_URL)
     .then(function (response) {
         return response.json();
     })
@@ -48,48 +19,34 @@ fetch(BREEDS_LIST_URL)
     })
 
     select.addEventListener("change", function(event) {
-        console.log(event.target.value);
-        console.log(`https://dog.ceo/api/breed/${event.target.value}/images/random`)
+
+        let url = `https://dog.ceo/api/breed/${event.target.value}/images/random`
+
+        getDoggo(url);
+
     });
 
-let url = 'some url';
+const img = document.querySelector('.dog-img');
+const spinner = document.querySelector('.spinner');
 
-// getNewDoggo(url);
+function getDoggo (url) {
+    spinner.classList.add("show");
+    img.classList.remove("show");
+    fetch(url)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function(data) {
+            img.src = data.message;
+            // spinner.classList.remove("show");
+            // img.classList.add("show");
+        })
 
-// make url
+}
 
-// show loading spinner
-
-// fetch from the API
-
-// Use the url to change the current image
-
-// stop showing loading spinner
-
-
-
-
-
-
-
-
-
-
-
+img.addEventListener("load", function () {
+    spinner.classList.remove("show");
+    img.classList.add("show");
+})
 
 
-
-
-
-// const BREEDS_URL = "https://dog.ceo/api/breeds/image/random";
-
-// const promise = fetch(BREEDS_URL);
-
-// promise
-//   .then(function(response) {
-//     const processingPromise = response.json();
-//     return processingPromise;
-//   })
-//   .then(function(processedResponse) {
-//     console.log(breeds);
-//   });
