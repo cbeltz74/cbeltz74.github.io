@@ -239,27 +239,28 @@ footer {
 .float-right {
     float:right;
     margin: 0 2rem 2rem 1rem;
+    border:1px solid black;
 }
 
 .important {
     margin-left:1rem;
-    width:50%;
 }
 
 blockquote {
-    padding:0.5rem;
+    padding:0 1rem 1.5rem 1rem;
     background-color: #8EE3E6;
-    float:right;
     text-align:center;
 }
 
-blockquote p {
+blockquote li {
     font-size: 1.25rem;
-    width:9rem;
+    width:100%;
+    margin-left:0.7rem;
 }
 
-blockquote cite {
-    font-size: 0.75rem;
+blockquote p {
+    margin:.5rem;
+    padding-top:0.5rem;
 }
 
 
@@ -352,7 +353,7 @@ select {
     border:none;
 }
 button {
-	margin: 2rem 0;
+	margin: .5rem 0;
 	background-color: #D9C896;
 	color:black;
 	border: none;
@@ -365,7 +366,32 @@ button:hover {
     border:1px solid black;
 }
 
+.about-last-p {
+    margin-bottom:1rem;
+}
+
 .social-media {
+    /* margin-top:1rem; */
+    /* background-color:white; */
+    padding:0;
+    margin:0;
+    text-align:center;
+}
+
+.social-media li {
+    display:inline-block;
+}
+
+.social-media a {
+    display:block;
+    padding:0.5rem .75rem;
+    text-decoration: none;
+    font-size:2rem;
+}
+
+
+
+/* .social-media {
     margin-top:1rem;
     display:flex;
     background-color:white;
@@ -375,4 +401,4 @@ button:hover {
 
 .social-media a {
     flex-basis: 19%;
-}
+} */
