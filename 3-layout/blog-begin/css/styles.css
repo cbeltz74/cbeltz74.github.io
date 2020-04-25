@@ -9,8 +9,8 @@ body {
 }
 
 .wrapper {
-    width:80%;
-    margin:0 auto;
+    width:70%;
+    margin: auto;
 }
 
 header {
@@ -30,28 +30,9 @@ header {
     margin-left:1rem;
 }
 
-
-
-/*
-
-nav ul {
-    display:flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    list-style-type: none;
-    padding:0;
-    margin:0;
-    border-top: 1px solid #a61f11;
-    border-bottom: 1px solid #DA0090;
-    margin-bottom:2rem;
-  }
-
-nav li {
-    flex-basis:11%;
-    padding:0.5rem 1rem 0.5rem 1rem;
+nav {
+    margin-bottom: 2rem;
 }
-
-*/
 
 nav ul {
     list-style-type: none;
@@ -62,7 +43,6 @@ nav ul {
     border-bottom: 1px solid #DA0090;
 
 }  
-
 
 nav li {
     display: inline-block
