@@ -48,7 +48,7 @@ body, html {
 }
 
  .color_background {
-    background-color: #2B4D62;
+    background-color:#DCDCDC;
 }
 
 
@@ -163,7 +163,7 @@ article li {
 /* Hobbies  */
 
 .hobbies_background {
-    background-color:#90EE90;
+    background-color:#8FBC8F;
 
     }
 
@@ -294,7 +294,8 @@ blockquote cite {
 
 
 body {
-    background-color: #B3D5F2;
+    background-color:#DCDCDC;
+    ;
 }
 .wrapper {
 	width: 80%;
