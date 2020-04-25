@@ -1,3 +1,25 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+
+header {
+    background-color: azure;
+    text-align: center;
+    height:5rem;
+    margin-bottom:2rem;
+}
+
+header h1 {
+    padding-top:1rem;
+}
+
+.select-breed {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 @keyframes spin {
     to {
         transform: rotateZ(360deg);
@@ -13,8 +35,11 @@
 
 .dog-img {
     display: none;
+    border:5px solid gold;
 }
 
 .show {
     display: block;
+    margin-left:auto;
+    margin-right: auto;
 }
