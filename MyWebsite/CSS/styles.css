@@ -1,17 +1,13 @@
 * {    
     font-family: 'Quicksand', sans-serif;
+    margin:0;
+    padding:0;
 }
 
 body, html {
     height:100%;
-    margin:0;
-
-    /* background-image: url(/images/baseball_background_blur.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover; */
-
 }
+
 
 .index_background {
     background-image: url(https://cbeltz74.github.io/MyWebsite/images/baseball_background_blur.jpeg);
@@ -24,6 +20,7 @@ body, html {
     text-align: center;
     margin-top:20rem;
     color:white;
+    width:100%;
 }
 
 .section-name {
@@ -50,7 +47,7 @@ body, html {
     color:white;
 }
 
-.color_background {
+ .color_background {
     background-color: #2B4D62;
 }
 
@@ -61,10 +58,6 @@ body, html {
     
     .aboutMe_background {
         background-color: #B3D5F2;
-    }
-    
-    .contact_background {
-    
     }
 
 .stories {
@@ -111,7 +104,6 @@ a:hover {
 
 nav {
     text-align: center;
-    border-top:1px solid black;
     border-bottom:1px solid black;
     margin-bottom:1rem;    
 }
@@ -131,7 +123,8 @@ nav li {
     font-size:1rem;
     font-weight: 800;
     padding:0.5rem;
-    border-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 nav li:hover {
@@ -269,10 +262,7 @@ textarea {
 
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
     background-color: #B3D5F2;
-	margin: 0;
-	padding: 0;
 }
 .wrapper {
 	width: 80%;
