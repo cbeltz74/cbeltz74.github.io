@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="CSS/main-styles2.css">
-    <link rel="stylesheet" href="Resume/resume3.css">
+    <link rel="stylesheet" href="CSS/resume3.css">
+    <link rel="stylesheet" href="CSS/photo-styles.css">
     <title>Document</title>
 </head>
 <body>
@@ -13,8 +15,8 @@
     
     <aside>
         <ul class="social-media">
-            <li><a href="#home"><i class="fas fa-home"></i></a></li>
-            <br>
+            <!-- <li><a href="#home"><i class="fas fa-home"></i></a></li>
+            <br> -->
             <li><a href="https://codepen.io/cbeltz74/" target="_blank"><i class="fab fa-codepen"></i></a></li>
             <li><a href="https://twitter.com/ColinBeltz" target="_blank"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://www.instagram.com/colinbeltz/" target="_blank"><i class="fab fa-instagram"></i></a></li>
@@ -39,15 +41,56 @@
             </ul>
         </nav>
 
-        <section>
+        <section class="intro">
             
-            <h2>My name is</h2>
-            <h1>Colin Beltz</h1>
-            <h2>and I am a:</h2>
+            <h2 class="nameIs">My name is</h2>
+            <h1 class="myName"><span>C</span>olin <span>B</span>eltz</h1>
+            <h2 class="iAm">and I am:</h2>
 
+            <div class="wrapper">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        
+                            <div class="swiper-slide">
+                            <img src="images/vs-code-screen.png" alt="Luna" />
+                            <br>
+                            <p>a web developer,</p>
+                        </div>                        
+                        <div class="swiper-slide">
+                            <img src="images/berrios.jpeg" alt="Luna" />
+                            <br>
+                            <p>a photographer who likes to still take pictures at sporting events</p>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/flowers.jpeg" alt="Luna" />
+                          <br>
+                          <p>as well as get outside to relax and get some excerise.</p>
+                        </div>
+                      
+                        <div class="swiper-slide">
+                            <img src="images/cards.jpeg" alt="Luna" />
+                            <br>
+                            <p>I also like to collect baseball cards, mostly of the Minnesota Twins</p>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <img src="images/yearbooks.jpeg" alt="Luna" />
+                            <br>
+                            <p>and I also collect yearbooks of the team. <br> I am only missing five of them.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/new-profile.jpeg" alt="Luna" />
+                            <br>
+                            <p>But above all else, I am a creator. <br> And I can't wait to see what we can develop together.</p>
+                        </div>
 
+                    </div>
+                  </div>
+              
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>            
             
-
         </section>
 
 
@@ -120,9 +163,7 @@
             </div>
                 <div class="text">
                     <h2>Personal website</h2>
-                    <p>
-                        Another bootcamp assignment was to create a personal website. The goal was to include pages for hobbies, projects as well as create photo gallery and a contact form. 
-                    </p>
+                    <p>Another bootcamp assignment was to create a personal website. The goal was to include pages for hobbies, projects as well as create photo gallery and a contact form. The photo gallery on the home page is based on that assignment.</p>
                     <ul class="technologies">
                         <li class="js"><i class="fab fa-js-square"></i>Use of Swiper.js libary</li>
                         <li class="html5"><i class="fab fa-html5"></i>Images, links</li>
@@ -284,5 +325,8 @@
 
     <script src="https://kit.fontawesome.com/9ed3967695.js" crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>          
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="JS/gallery.js"></script>
 </body>
 </html>
