@@ -24,10 +24,6 @@
     background-image: linear-gradient(var(--main-bg-color), white); /* Standard syntax (must be last) */
 }     
 
-.container1 {
-    height:100%;
-} 
-
 .container1:last-of-type {
     margin-bottom: 0;
 }
@@ -164,7 +160,9 @@ span {
 .story {
     display: flex;
     flex-flow: row nowrap;
-    margin:1rem;
+    margin:0 auto;
+    justify-content: center;
+    width:80%;
 }
 
 
@@ -227,6 +225,10 @@ span {
 @media only screen and (max-width: 900px) {
     aside {
         margin-left:-1%;
+    }
+
+    .container0, .container1 {
+        height: 100%;
     }
 }
 

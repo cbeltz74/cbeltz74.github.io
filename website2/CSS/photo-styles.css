@@ -29,3 +29,8 @@
   .swiper-slide p {
     font-size:1.5vw;
   }
+
+  @media only screen and (max-width: 900px) {
+    .swiper-button-prev, .swiper-button-next { 
+      margin-top:-20%;
+    }
