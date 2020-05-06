@@ -2,6 +2,13 @@
     box-sizing: border-box;
   }
 
+  .swiper-container {
+    display: flex;
+    flex-flow: row nowrap;
+    z-index:0;
+  }
+
+
   .wrapper {
     margin:0 auto;
     padding:0;
@@ -18,19 +25,16 @@
     box-shadow: 5px 10px 8px #888888;
   }
 
-  .swiper-button-prev {
-    margin-left:15%;
-  }
 
-  .swiper-button-next {
-    margin-right:15%;
-  }
+  
+
+ 
 
   .swiper-slide p {
     font-size:1.5vw;
   }
 
-  @media only screen and (max-width: 900px) {
+  /* @media only screen and (max-width: 900px) {
     .swiper-button-prev, .swiper-button-next { 
       margin-top:-20%;
-    }
+    } */

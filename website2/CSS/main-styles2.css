@@ -18,21 +18,29 @@
 
 .container0, .container1 {
     width:75%;
-    height:100vh;
     margin:0 auto 2rem auto;
     background-color: var(--main-bg-color); /* For browsers that do not support gradients */
     background-image: linear-gradient(var(--main-bg-color), white); /* Standard syntax (must be last) */
-}     
+}  
+
+.container0 {
+    height:100vh;
+}
+
+.container1 {
+    height:100%;
+}
 
 .container1:last-of-type {
     margin-bottom: 0;
 }
 
+/* 
 aside {
     top:33rem;
     float:left;
     margin-left:2%;
-    /* position:-webkit-sticky; */
+    position:-webkit-sticky;
 }
 
 .social-media {
@@ -49,12 +57,13 @@ aside {
 }
 
 .social-media a {
-    font-size: 2vh;
+    font-size: 1.5rem;
 }
 
 .social-media a:hover {
     color:var(--main-bg-color);
-}
+} */
+
 
 
 .navigation {
@@ -62,13 +71,18 @@ aside {
     top:0;
     height:2.5rem; /* This was 5vh */
     border-bottom: 1px solid var(--second-bg-color);
+    z-index: 1;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background: rgba(144, 238, 144, 1);
+    font-size:1.25rem;
 }
 
 .navigation ul {
     display:flex;
     flex-flow: row nowrap;
     list-style-type: none;
-    justify-content: flex-start;
 }
 
 .navigation li {
@@ -100,16 +114,16 @@ aside {
    background: rgba(0, 0, 0, 0);
 }
 
-.navigation {
-    background: rgba(144, 238, 144, 1);
- }
-
-
 .nav-name {
     font-size: 1.75rem;
     margin-top:-1.25vh;
     font-weight: 600;
 }
+
+.nav-name-home {
+    visibility: hidden;
+}
+
 
 
 .navigation .nav-name:hover {
@@ -213,28 +227,19 @@ span {
     color: var(--css3-color)
 }
 
-.fas, .fab {
+/* .fas, .fab {
     padding-right:0.5rem;
-}
+} */
 
 
 /* ABOUT */
 
 
 
-@media only screen and (max-width: 900px) {
-    aside {
-        margin-left:-1%;
-    }
-
-    .container0, .container1 {
-        height: 100%;
-    }
-}
+@media only screen and (max-width: 1000px) {
 
 
-
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     .text h2 {
         font-size: 4vw;
     }
@@ -243,7 +248,7 @@ span {
         flex-flow: column;
     }
 
-    aside {
-        margin-left:-2%;
+    .navigation {
+        font-size:1rem;
     }
 }
