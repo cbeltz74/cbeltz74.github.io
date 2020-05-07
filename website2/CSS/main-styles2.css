@@ -214,6 +214,10 @@ span {
     list-style-type: none;    
 }
 
+.technologies a {
+    text-decoration: none;
+}
+
 
 .js {
     color: var(--js-color)
@@ -236,10 +240,15 @@ span {
 
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
 
+}
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 768px) {
     .text h2 {
         font-size: 4vw;
     }
@@ -251,4 +260,48 @@ span {
     .navigation {
         font-size:1rem;
     }
+}
+
+@media only screen and (max-width: 480px) {
+    .container0, .container1 {
+        width:100%;
+    }
+
+    .container0 {
+        margin-top:-3rem;
+    }
+
+    .nameIs, .iAm {
+        font-size:4vw;
+    }
+
+    .myName {
+        font-size: 10vw;
+    }
+
+    .nav-name-home {
+        display:none;
+    }
+
+    .navigation {
+        height:10rem;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .navigation ul {
+        flex-flow: column;
+        text-align: center;
+    }
+
+
+    .text h2, .grid-area h2 {
+        font-size:5vw;
+    }
+
+    .grid-area h3 {
+        font-size: 4.5vw;
+    }
+
+
 }
