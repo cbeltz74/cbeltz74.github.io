@@ -2,7 +2,7 @@
 
 .resume {
     display:grid;
-    width: 90%;
+    width: 100%;
     height: auto;
     grid-template-columns: 1.5fr 1fr 1fr;
     grid-template-rows: auto auto auto auto;
@@ -154,6 +154,7 @@ p {
 
         @media (max-width: 700px) {
             .resume {
+                margin-top:1rem;
                 grid-template-columns:1fr;
                 grid-template-areas:
                 
