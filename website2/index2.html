@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-    <link rel="stylesheet" href="CSS/main-styles2.css">
+    <link rel="stylesheet" href="CSS/main-styles.css">
     <link rel="stylesheet" href="CSS/resume3.css">
     <link rel="stylesheet" href="CSS/photo-styles.css">
     <title>Colin Beltz | Web Developer</title>
@@ -25,16 +25,15 @@
     </aside>          
      -->
     
-    <div class="container0" id="home">
+    <div class="container" id="home">
 
 
         <nav class="navigation nav-home">
             <ul class="left-nav">
-                <li class="nav-name nav-name-home">Colin Beltz</li>
+                <a href="#home"><li class="nav-name nav-name-home" id="#home">Colin Beltz</li></a>
             </ul>
 
             <ul class="right-nav">   
-                <a href="#home"><li>Home</li></a>
                 <a href="#projects"><li>Projects</li></a>
                 <!-- <a href="#hobbies"><li>Hobbies</li></a> -->
                 <a href="#about"><li>About</li></a>
@@ -45,9 +44,44 @@
 
         <section class="intro">
             
-            <h2 class="nameIs">My name is</h2>
-            <h1 class="myName"><span>C</span>olin <span>B</span>eltz</h1>
-            <h2 class="iAm">and I am:</h2>
+            <article class="intro-name">
+                <h2 class="nameIs">My name is</h2>
+                <h1 class="myName"><span class="firstLetter">C</span>olin <span class="firstLetter">B</span>eltz</h1>
+                <h2 class="iAm">and I am:</h2>
+            </article>
+
+
+
+
+            <div class="static-photos">
+                <div class="photos">
+                    <img src="images/vs-code-screen.png" alt="Luna" />
+                    <br>
+                    <p>A web developer with more than 15 years of experience in writing, photography and page design for newspapers.</p>
+                </div>                       
+                
+                <div class="photos">
+                    <img src="images/flowers.jpeg" alt="Luna" />
+                    <br>
+                    <p>Still on the lookout for great pictures wherever they may be.</p>
+                </div>
+            
+                <div class="photos">
+                    <img src="images/yearbooks.jpeg" alt="Luna" />
+                    <br>
+                    <p>A collector of Minnesota Twins yearbooks and other sports collectibles.</p>
+                </div>
+           
+                <div class="photos">
+                    <img src="images/new-profile.jpeg" alt="Luna" />
+                    <br>
+                    <p>Above all else, a creator. I can't wait to see what we can develop together.</p>
+                </div>
+         </div>
+
+
+
+
 
             <div class="wrapper">
                 <div class="swiper-container">
@@ -58,8 +92,7 @@
                             <div class="swiper-slide swiper1">
                                 <img src="images/vs-code-screen.png" alt="Luna" />
                                 <br>
-                                <p>A web developer with more than 15 years of experience <br> 
-                                   in writing, photography and page design for newspapers.</p>
+                                <p>A web developer with more than 15 years of experience in writing, photography and page design for newspapers.</p>
                             </div>                       
                             
                             <div class="swiper-slide swiper2">
@@ -95,13 +128,12 @@
 
     <div class="container1" id="projects">
 
-        <nav class="navigation">
+        <nav class="navigation second-nav">
             <ul class="left-nav">
-                <li class="nav-name">Colin Beltz</li>
+                <a href="#home"><li class="nav-name">Colin Beltz</li></a>
             </ul>
                 
             <ul class="right-nav">   
-                <a href="#home"><li>Home</li></a>
                 <li class="title">Projects</li>
                 <!-- <a href="#hobbies"><li>Hobbies</li></a> -->
                 <a href="#about"><li>About</li></a>
@@ -113,15 +145,15 @@
             <div class="story-image">
             <!-- <img src="images/drives.jpeg" class="image"> -->
             </div>
-                    <div class="text">
+                    <div class="story-text">
                         <h2>Web Form</h2>
-                        <p class="caption">As a Revenue Examiner, I saw a need for taxpayers to get additional information beyond when the phone lines are open. I created a web form that asks questions about the users' return. Their input determines the answers the user will receive which often mimic what they can get on the phone.</p>
-                        <ul class="technologies">
-                            <a href="https://codepen.io/cbeltz74/full/JQYJEa"><li class="cp"><i class="fab fa-codepen"></i>See code on Codepen</li></a>
-                            <li class="html5"><i class="fab fa-html5"></i>Forms</li>
-                            <li class="css3"><i class="fab fa-css3-alt"></i>Media queries</li>
-                            <li class="js"><i class="fab fa-js-square"></i>If-then statements, DOM manipulation</li>
-                        </ul>
+                            <p class="caption">As a Revenue Examiner, I saw a need for taxpayers to get additional information beyond when the phone lines are open. I created a web form that asks questions about the users' return. Their input determines the answers the user will receive which often mimic what they can get on the phone.</p>
+                            <ul class="technologies">
+                                <a href="https://codepen.io/cbeltz74/full/JQYJEa"><li class="cp"><i class="fab fa-codepen"></i>See code on Codepen</li></a>
+                                <li class="html5"><i class="fab fa-html5"></i>Forms</li>
+                                <li class="css3"><i class="fab fa-css3-alt"></i>Media queries</li>
+                                <li class="js"><i class="fab fa-js-square"></i>If-then statements, DOM manipulation</li>
+                            </ul>
                     </div>
         </article>
 
@@ -129,7 +161,7 @@
             <div class="story-image">
             <!-- <img src="images/drives.jpeg" class="image"> -->
             </div>
-                <div class="text">
+                <div class="story-text">
                     <h2>Scientific Calculator</h2>
                     <p>One of projects I completed during the Frontend Masters online bootcamp was a simple calculator. After following the tutorial, I have added rows of scientific keys. Those keys are only visible when the calculator window is a certain size. Next is to add the functionality for the scientific keys.</p>
                     <ul class="technologies">
@@ -146,8 +178,8 @@
             <div class="story-image">
             <!-- <img src="images/drives.jpeg" class="image"> -->
             </div>
-                <div class="text">
-                    <h2>Dog App</h2>
+            <div class="story-text">
+                <h2>Dog App</h2>
                     <p>Followed along with example in Frontend Masters online bootcamp to create a website where the user
                         can select a breed of dog and see a picture of that dog. There is an animation that spins in a circle
                         while the image is retrieved from the <a href="https://dog.ceo">Dog CEO</a> website.
@@ -166,8 +198,8 @@
             <div class="story-image">
             <!-- <img src="images/drives.jpeg" class="image"> -->
             </div>
-                <div class="text">
-                    <h2>Personal website</h2>
+            <div class="story-text">
+                <h2>Personal website</h2>
                     <p>Another bootcamp assignment was to create a personal website. The goal was to include pages for hobbies, projects as well as create photo gallery and a contact form. The photo gallery on the home page is based on that assignment.</p>
                     <ul class="technologies">
                         <a href="https://github.com/cbeltz74/cbeltz74.github.io/tree/master/MyWebsite"><li class="gh"><i class="fab fa-github"></i>See code on Github</li></a>
@@ -211,11 +243,10 @@
     <div class="container1" id="about">
         <nav class="navigation">
             <ul class="left-nav">
-                <li class="nav-name">Colin Beltz</li>
+                <a href="#home"><li class="nav-name">Colin Beltz</li></a>
             </ul>
                 
             <ul class="right-nav"> 
-                <a href="#home"><li>Home</li></a>
                 <a href="#projects"><li>Projects</li></a>
                 <!-- <a href="#hobbies"><li>Hobbies</li></a> -->
                 <li class="title">About</li>
@@ -223,11 +254,10 @@
             </ul>
         </nav>
 
-        <main class="wrapper">
+        <section class="resume-wrapper">
             <article class="resume">
                 <section class="grid-area name">
-                    <!-- <h1>Colin Beltz</h1> -->
-                    <p class="mission">I am an experienced professional looking to bring many years of practice in award-winning page design, photography and customer service to a web development role.</p>
+                    <p>I am an experienced professional looking to bring many years of practice in award-winning page design, photography and customer service to a web development role.</p>
                 </section>
                 
                 <section class="grid-area links">
@@ -306,8 +336,7 @@
                 </section>
 
             </article> 
-        </main>
-
+        </section>
 
     </div>
 

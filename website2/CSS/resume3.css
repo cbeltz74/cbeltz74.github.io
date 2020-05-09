@@ -34,21 +34,12 @@
     color:#2E4053;
 }
 
-.name p {
-    font-size:1.5em;
-}
-
 h2 {
     margin:0;
     padding:0;
     font-size: 1.5em;
     color:#2E4053;
 }
-
-/* .grid-area:hover {
-    background-color:ghostwhite;
-
-} */
 
 h3 {
     margin:0;
@@ -126,7 +117,7 @@ p {
     margin-right:4px;
 }
 
-.wrapper {
+.resume-wrapper {
     padding       : 0;
     display       : flex;
     flex-direction: clumn;
@@ -154,7 +145,6 @@ p {
 
         @media (max-width: 700px) {
             .resume {
-                margin-top:1rem;
                 grid-template-columns:1fr;
                 grid-template-areas:
                 
@@ -162,9 +152,9 @@ p {
                     "links"
                     "overview"
                     "expertise"
-                    "education"
                     "skills"
                     "work"
+                    "education"
                     ;
             }
 
