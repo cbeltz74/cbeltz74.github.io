@@ -183,3 +183,16 @@ span {
 .mission {
     font-size:1rem;
 }
+
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+}
+
