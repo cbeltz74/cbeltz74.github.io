@@ -112,6 +112,64 @@
     margin-bottom: 1rem;
 }
 
+
+
+/* STATIC PHOTOS, WRAPPER CLASSES */
+
+
+.swiper-container {
+    display: flex;
+    flex-flow: row nowrap;
+    z-index:0;
+  }
+
+.static-photos {
+  margin:0 auto;
+  padding:1rem;
+}
+
+.photos {
+  width:100%;
+}
+
+img {
+  width:75%
+}
+
+.photos p {
+  margin-top:2vh;
+    font-size:1.25rem;
+}
+
+.wrapper {
+  display:none;
+}
+
+  .wrapper {
+    margin:0 auto;
+    padding:0;
+  }
+
+  .swiper-slide {
+    text-align: center;
+  }
+
+  img {
+    width:100%;
+    border:2px solid black;
+    box-shadow: 5px 10px 8px #888888;
+  }
+
+  .swiper-slide p {
+    font-size:1.75vw;
+  }
+
+
+
+
+
+
+
 /* PROJECTS */
 
 .story {
@@ -185,14 +243,362 @@ span {
 }
 
 
-@media only screen and (max-width: 1200px) {
+/* RESUME */
+
+
+
+.resume {
+    display:grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    /* box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35); */
+    grid-template-areas:
+    
+        "name       name        links"
+        "overview   expertise   education"
+        "skills     skills      skills"
+        "work       work        work"
+        ;
+        grid-gap: 5px;
+}
+
+.grid-area {
+    padding: 1em 1em 1em 1em;
+}
+
+.name {
+
+    grid-area: name;
+}
+
+
+.name h1 {
+    margin:0;
+    padding:0;
+    font-size:2em;
+    color:#2E4053;
+}
+
+h2 {
+    margin:0;
+    padding:0;
+    font-size: 1.5em;
+    color:#2E4053;
+}
+
+h3 {
+    margin:0;
+    padding:0;
+    font-size: 1em;
+    color:#2E4053;
+}
+
+
+ul {
+    list-style-type: circle;
+    margin-left:1.5em;
+    margin-top:0;
+    padding:0;    
+}
+
+p {
+    margin:0;
+    padding-bottom:10px;
+}
+
+.linksWrapper {
+    padding-top:3px;
+    display:grid;
+    grid: auto auto auto/ auto auto;
+    grid-gap: 5px;
+}
+
+.links {
+    grid-area: links;
 
 }
 
-@media only screen and (max-width: 1024px) {
+.links ul {
+    list-style-type: none;
+}
+
+.education {
+
+    grid-area: education;
+}
+
+.skills {
+
+    grid-area: skills;
+}
+
+.overview {
+
+    grid-area: overview;
+}
+
+
+.expertise {
+
+    grid-area: expertise;
+}
+
+.work {
+
+    grid-area: work;
+}
+
+.exp_subhead {
+    font-style: italic;
+    color:#808B96;
 
 }
+
+.fab {
+    margin-right:4px;
+}
+
+.fas {
+    margin-right:4px;
+}
+
+.resume-wrapper {
+    padding       : 0;
+    display       : flex;
+    flex-direction: clumn;
+    align-items   : center;
+}
+
+
+    @media (max-width: 1100px) {
+        .resume {
+            grid-template-columns: 1.25fr 1fr;
+            grid-template-rows: auto auto auto auto auto;
+            grid-template-areas:
+                "name       links"
+                "overview   expertise"
+                "skills     skills"
+                "work       work"
+                "education  education"
+            }  
+    
+            .name p {
+                font-size:1.25em;
+            }
+    
+    }
+
+        @media (max-width: 700px) {
+            .resume {
+                grid-template-columns:1fr;
+                grid-template-areas:
+                
+                    "name"
+                    "links"
+                    "overview"
+                    "expertise"
+                    "skills"
+                    "work"
+                    "education"
+                    ;
+            }
+
+            .grid-area {
+                padding: 1em 1em 1em 1em;
+                border-bottom: .1px solid black;
+            }
+
+                .linksWrapper {
+                    padding-top:3px;
+                    display:grid;
+                    grid: auto auto/ auto auto auto;
+                    grid-gap: 5px;
+                }          
+
+
+        }
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .container0, .container1 {
+    width:75%;
+    height:100vh;
+    margin:0 auto 2rem auto;
+    }
+
+    /* .container {
+        height:100vh;
+    }
+
+    .container1 {
+        height:100%;
+    } */
+
+
+    /*  HOME    */
+
+    .intro {
+        text-align: center;
+        margin-top:1rem;
+    }
+
+    .intro-name {
+        display:block;
+    }
+
+    .nameIs {
+        font-size: 2vw;
+    }
+
+    .myName {
+        font-size: 5vw;
+        font-weight:500;
+    }
+
+    span {
+        color: var(--CB-intials);
+    }
+
+    .iAm {
+        font-size: 2vw;
+        margin-bottom: 1rem;
+    }
+
+    /* Photo Gallery */    
+    .wrapper {
+        display:block;
+        margin:0 auto;
+        padding:0;
+        width:75%;
+      }
+         img {
+          width:60%;
+        }
+  
+        .swiper-slide p {
+          margin-top:3vh;
+            font-size:2vw;
+        }      
+  
+      .static-photos {
+        display:none;
+      }
+
+/* ARTICLE */
+
+.story {
+    display: flex;
+    flex-flow: row nowrap;
+    margin:0 auto;
+    justify-content: center;
+    width:80%;
+}
+
+
+.image {
+    width:20vw;
+    object-fit: cover;
+}
+
+.text {
+    padding-left:1rem;
+}
+
+.story h2 {
+    margin-bottom:1vh;
+    font-size:2.5vw;
+    font-weight: 100;
+}
+
+span {
+    font-weight: 600;
+}
+
+
+.technologies {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    margin:0.5rem 0;
+}
+
+.technologies li {
+    margin-left:1rem;
+    list-style-type: none;    
+}
+
+.technologies a {
+    text-decoration: none;
+}
+
+
+.js {
+    color: var(--js-color)
+}
+
+.html5 {
+    color: var(--html5-color)
+}
+
+.css3 {
+    color: var(--css3-color)
+}
+
+
+
+}
+
+
+
+/* @media only screen and (max-width: 1024px) {
+
+} */
 
 @media only screen and (max-width: 768px) {
+    .container0, .container1 {
+        width:100%;
+    }
+
+    .text h2, .grid-area h2 {
+        font-size:5vw;
+    }
+
+    .grid-area h3 {
+        font-size: 4.5vw;
+    }
+
+
+    .nameIs, .iAm, .myName {
+        visibility: hidden;;
+    }
+
+
+    .nav-name-home {
+        visibility: visible;
+    }
+
+    .text h2 {
+        font-size: 4vw;
+    }
+
+    .technologies {
+        flex-flow: column;
+    }
+
+    .navigation {
+        font-size:1rem;
+    }
+
+    .nav-name {
+        font-size: 4vw;
+    }
 }
 

@@ -36,37 +36,6 @@
     margin-bottom: 0;
 }
 
-/* 
-aside {
-    top:33rem;
-    float:left;
-    margin-left:2%;
-    position:-webkit-sticky;
-}
-
-.social-media {
-    display:flex;
-    flex-flow: column;
-    list-style-type: none;
-    position:-webkit-sticky;
-}
-
-.social-media li {
-    display:block;
-    padding:1.5vh 3vw;
-    border-left:1px solid var(--second-bg-color);
-}
-
-.social-media a {
-    font-size: 1.5rem;
-}
-
-.social-media a:hover {
-    color:var(--main-bg-color);
-} */
-
-
-
 .navigation {
     position:-webkit-sticky;
     top:0;
