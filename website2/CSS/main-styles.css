@@ -368,12 +368,12 @@ p {
 .resume-wrapper {
     padding       : 0;
     display       : flex;
-    flex-direction: clumn;
+    flex-direction: column;
     align-items   : center;
 }
 
 
-    @media (min-width: 1100px) {
+    /* @media (min-width: 1100px) {
         .name p {
             font-size:2em;
         }
@@ -397,7 +397,7 @@ p {
     
     }
 
-        @media (max-width: 700px) {
+        @media (max-width: 768px) {
             .resume {
                 grid-template-columns:1fr;
                 grid-template-areas:
@@ -425,7 +425,7 @@ p {
                 }          
 
 
-        }
+        } */
 
 
 
@@ -433,7 +433,7 @@ p {
 
 
 @media only screen and (min-width: 768px) {
-    .container0, .container1 {
+    .container, .container1 {
     width:75%;
     height:100vh;
     margin:0 auto 2rem auto;
@@ -569,14 +569,14 @@ p {
         width:100%;
     }
 
-    .text h2, .grid-area h2 {
+    .text h2, .grid-area h2, {
         font-size:5vw;
     }
 
     .grid-area h3 {
-        font-size: 4.5vw;
+        font-size: 3.5vw;
+        font-weight: 100;
     }
-
 
     .nameIs, .iAm, .myName {
         visibility: hidden;;
@@ -603,8 +603,40 @@ p {
         font-size: 4vw;
     }
 
+    .story {
+        width:100%;
+    }
+
     .story-image {
         display:none;
     }
+
+    .resume {
+        grid-template-columns:1fr;
+        grid-template-areas:
+        
+            "name"
+            "links"
+            "overview"
+            "expertise"
+            "skills"
+            "work"
+            "education"
+            ;
+    }
+
+    .grid-area {
+        padding: 1em 1em 1em 1em;
+        border-bottom: .1px solid black;
+    }
+
+    .linksWrapper {
+        padding-top:3px;
+        display:grid;
+        grid: auto auto/ auto auto auto;
+        grid-gap: 5px;
+    }     
+
+
 }
 
