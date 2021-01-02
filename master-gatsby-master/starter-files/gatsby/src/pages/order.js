@@ -1,10 +1,10 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-export default function SlicemastersPage() {
+export default function OrderPage() {
   return (
     <>
-      <p>Hey! I'm the Slicemasters page!</p>
+      <p>Hey! I'm the Order page!</p>
     </>
   );
 }
