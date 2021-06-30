@@ -11,11 +11,11 @@ body {
     padding:1rem;
 }
 
-.header {
-    background-color: #F1F1F1;
+/* .header {
+    background-color: blue;
     text-align: center;
     padding: 20px;
-  }
+  } */
 
 /* The navbar container */
 .topnav {
@@ -39,13 +39,12 @@ body {
     color: black;
   }
 
-.card_container {
+.front_container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto;
   background-color: #2196F3;
   padding: 10px;
   align-items: center;
-  v
 }
 
 .front_photo {
@@ -59,6 +58,74 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.5rem;
   text-align: center;
+}
+
+/* Topps Twins Cards */
+
+.ToppsTwins {
+  height: 8vh;
+  text-align: center;
+}
+
+.card_container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #2196F3;
+  padding: 5px;
+  align-items: center;
+}
+
+.introduction h3 {
+  font-size: 4rem;
+}
+
+.introduction {
+  padding: 2vh 0 2vh 0;
+  font-size: 1.25rem;
+}
+
+.card_details {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40vw;
+  margin-bottom:3vh;
+  border:1px solid black;
+}
+
+.card_details h4 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.playerName {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 5vh;
+}
+
+.cardNumber {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+}
+
+.front-back {
+  display:flex;
+}
+
+.vcard_front, .vcard_back {
+  width:45%;
+  height:auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vcard_front, .vcard_back {
+  width:45%;
+  height:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
