@@ -1,0 +1,76 @@
+* {
+    padding:0;
+    margin:0;
+}
+
+h1 {
+    color:blue;
+}
+
+body {
+    padding:1rem;
+}
+
+.header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
+  }
+
+/* The navbar container */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Navbar links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Links - change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+.card_container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+  align-items: center;
+  v
+}
+
+.front_photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.front_page_card h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+
+/* section {
+    background-color: burlywood;
+}
+
+aside {
+    background-color: lightgoldenrodyellow;
+} */
+
+footer {
+    background-color: lightslategrey;
+}
