@@ -4,6 +4,26 @@
     box-sizing: border-box;
 }
 
+:root {
+  --headings-font-family: 'Sonsie One', cursive;
+  --uniform-font-family: 'Anton', sans-serif;
+  
+  /* Current Colors */
+  --TwinsNavy:#002B5C;
+  --ScarlettRed:#BA0C2F;
+  --KasotaGold:#B9975B;
+
+  /* 1987-2009*/
+  --OldTwinsNavy:#0C2340;
+  --OldTwinsRed:#BA0C2F;
+
+  /* 1961-1975 */
+  --TwinsBabyBlue:#009ABC;
+  --FirstTwinsRed:#BE0F34;
+  --TwinsWhite:#FFFFFF;
+
+}
+
 body, html {
   height: 100%;
   margin: 0;
@@ -12,10 +32,17 @@ body, html {
 
 a {
   text-decoration: none;
+  color:var(--TwinsNavy);
 }
 
+a:hover {
+  text-decoration:underline;
+  color:var(--TwinsWhite);
+}
+
+
 li:hover {
-  background-color: lightblue;
+  background-color:var(--ScarlettRed);
 }
 
 /* navigation drop down menus */
@@ -64,9 +91,11 @@ li:hover {
 
 .introduction {
   padding-top:2vh;
-  height:20vh;
-  background-image: url(/photos/ToppsTwins/ToppsTwinsHero.jpg);
+  padding-bottom:0.5vh;
+  background-image: url(/photos/ToppsTwins/ToppsTwinsHero1.jpeg);
+  background-size:cover;
 }
+
 
 .introduction h3 {
   font-size: 4vw;
@@ -81,6 +110,8 @@ li:hover {
 .ToppsNav {
   display: flex;
   justify-content: space-between;
+  font-family: var(--uniform-font-family);
+  font-size:1.5vw;
 }
 
 .ToppsNav li {
@@ -110,16 +141,17 @@ ul {
 
 .cards h3, h4, h5 {
   text-align: center;
+  font-family: var(--uniform-font-family);
 }
 
 .cards h3 {
-  font-size:4vw;
+  font-size:5vw;
+  color: var(--OldTwinsNavy);
+  text-shadow: 3px 3px 1px var(--FirstTwinsRed);
 }
 
 .cards h4 {
-  font-size:2vw;
-  font-family: 'Sonsie One', cursive;
-
+  font-size:3vw;
 }
 
 .cards h5 {
