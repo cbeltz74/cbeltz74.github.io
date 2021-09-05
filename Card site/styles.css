@@ -74,7 +74,7 @@ body, html {
 .cards {
   display:flex;
   padding:1vw;
-  background-color:lightblue;
+  background-color:#DCDCDC;
   margin:1vh 0 1vh 0;
 }
 
