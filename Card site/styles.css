@@ -10,6 +10,14 @@ body, html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: lightblue;
+}
+
 /* navigation drop down menus */
 
 .dropbtn {
@@ -55,7 +63,6 @@ body, html {
 /* ToppsTwinsCards.html */
 
 .introduction {
-  margin-top:1vh;
   padding-top:2vh;
   height:20vh;
   background-image: url(/photos/ToppsTwins/ToppsTwinsHero.jpg);
@@ -71,11 +78,30 @@ body, html {
   text-align: center;
 }
 
+.ToppsNav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ToppsNav li {
+  padding:1rem 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+
 .cards {
   display:flex;
+  justify-content: space-around;
   padding:1vw;
   background-color:#DCDCDC;
   margin:1vh 0 1vh 0;
+}
+
+.top_card {
+  margin:0 0 1vh 0;
 }
 
 .cards header {
@@ -92,6 +118,8 @@ body, html {
 
 .cards h4 {
   font-size:2vw;
+  font-family: 'Sonsie One', cursive;
+
 }
 
 .cards h5 {
@@ -106,3 +134,25 @@ body, html {
 .card-h {
   width: 40%;
 }
+
+.BottomNav {
+  display: flex;
+  align-content: space-between;
+  padding:1vw 0 1vw 0;
+}
+
+.nav1960 {
+  display:flex;
+  flex-direction: row-reverse;
+}
+
+
+
+
+.BottomNav li {
+  padding:1vh 1vw;
+  background-color:cadetblue;
+}
+
+
+
