@@ -81,6 +81,8 @@ li:hover {
   font-size:1.5vw;
   text-align:center;
   font-weight:normal;
+  color:var(--ScarlettRed);
+  text-shadow: 3px 3px 1px var(--KasotaGold);
 }
 
 .ToppsNav {
@@ -149,6 +151,7 @@ ul {
 .cards header p {
   visibility: hidden;
 }
+
 
 .BottomNav {
   display: flex;
