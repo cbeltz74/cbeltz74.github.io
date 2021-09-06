@@ -45,52 +45,13 @@ li:hover {
   background-color:var(--ScarlettRed);
 }
 
-/* navigation drop down menus 
-
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-
-
-*/
-
 /* ToppsTwinsCards.html */
+
+.ToppsIntro {
+  padding: 0 2vw 0 2vw;
+  line-height: 1.5rem;
+}
+
 
 .TwinsLogo {
   width:18%;
@@ -117,8 +78,8 @@ li:hover {
 
 .introduction p {
   font-size:1.5vw;
-  text-align: center;
-  font-weight:bold;
+  text-align:center;
+  font-weight:normal;
 }
 
 .ToppsNav {
@@ -139,7 +100,8 @@ ul {
 
 .cards {
   display:flex;
-  justify-content: space-around;
+  justify-content:space-evenly;
+  align-items: center;
   padding:1vw;
   background-color:#DCDCDC;
   margin:1vh 0 1vh 0;
@@ -173,18 +135,25 @@ ul {
   padding-bottom:.75vh;
 }
 
+
 .card-v {
-  width: 20%;
+  max-width: 20%;
+  margin:0 7.5%
 }
 
 .card-h {
-  width: 40%;
+  max-width: 35%;
+}
+
+.cards header p {
+  visibility: hidden;
 }
 
 .BottomNav {
   display: flex;
+  justify-content: space-between;
   align-content: space-between;
-  padding:1vw 0 1vw 0;
+  padding:0 0 0.5vw 0;
 }
 
 .nav1960 {
@@ -193,12 +162,18 @@ ul {
 }
 
 
-
-
 .BottomNav li {
   padding:1vh 1vw;
-  background-color:cadetblue;
+  background-color:var(--TwinsBabyBlue);
 }
 
+.BottomNav li:hover {
+  background-color: var(--ScarlettRed);
+}
 
+footer {
+  background-color:#999;
+  padding:2vh 0;
+  text-align: center;
+}
 
