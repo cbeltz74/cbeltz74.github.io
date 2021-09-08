@@ -45,6 +45,10 @@ li:hover {
   background-color:var(--ScarlettRed);
 }
 
+.front_container {
+  margin-top:1rem;
+}
+
 /* ToppsTwinsCards.html */
 
 .ToppsIntro {
@@ -184,3 +188,28 @@ footer {
   text-align: center;
 }
 
+
+
+
+
+/* Bowman card page */
+
+
+.card_album {
+  display:grid;
+  grid-template-columns:repeat(6, 1fr);
+  grid-template-rows:repeat(5, 1fr);
+}
+
+.card_layout {
+  margin:1px 2px;
+  padding:2% 3%;
+  font-size:1vw;
+  text-align:center;
+}
+
+
+.card_image {
+  width:100%;
+  box-shadow: 1px 5px 10px 0.5px #000;
+}
