@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- put in css file link -->
+    <title>My Card Collection</title>
+  </head>
+    <body>
+      <section id="container">
+
+        <header>
+          <h1>My Card Collection</h1>
+        </header>
+      
+          <section id="sidebar">
+            <ul>
+              <li>Rookie Cards</li>
+              <li>Autographs</li>
+              <li>Bowman Autographs</li>
+              <li>Serial Numbered cards</li>
+              <li>Stadium Club</li>
+              <li>Top 100 Players - 2020</li>
+              <li>Top 100 Players - 2021</li>
+              <li>Yearbooks</li>
+              <li>All Star/World Series programs</li>
+              <li>Press Pins</li>
+            </ul>
+          </section>
+
+            <section id="main">
+
+            </section>
+      
+      
+      <?php
+      $servername = "localhost";
+      $username = "root";
+      $password = "eeF99vzpg4TV";
+      $dbname = "Cards";
+      
+      // Create connection
+      $conn = new mysqli($servername, $username, $password, $dbname);
+      // Check connection
+      if ($conn->connect_error) {
+          die("Connection failed: " . $conn->connect_error);
+      } 
+      
+      $sql = "SELECT Player.Player_ID, Player.First_Name, Player.Last_Name FROM Cards";
+      $result = $conn->query($sql);
+      
+      if ($result->num_rows > 0) {
+          // output data of each row
+          while($row = $result->fetch_assoc()) {
+              echo "<br> id: ". $row["Player.Player_ID"]. " - Name: ". $row["First_Name"]. " " . $row["Last_Name"] . "<br>";
+          }
+      } else {
+          echo "0 results";
+      }
+      
+      $conn->close();
+      ?> 
+      
+        <footer>
+
+        </footer>
+
+      </body>
+
+
+  </section> <!-- Container closing tag -->
+
+</html>
