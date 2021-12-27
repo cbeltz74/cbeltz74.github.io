@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>My Card Collection</title>
+
   </head>
     <body>
       <section id="container">
@@ -19,36 +20,65 @@
             <!-- <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
             <label for="vehicle1"> I have a bike</label><br> -->
 
+<?php
+
+
+
+
+?>
+
+
+            <h3>Card Brands</h3>
+            <input type="checkbox" id="Bowman" name="Bowman" value="Bowman">
+            <label for="Bowman">Bowman</label><br>
+
+            <input type="checkbox" id="Topps" name="Topps" value="Topps">
+            <label for="Topps">Topps</label><br>
+
+            <input type="checkbox" id="Topps_Chrome" name="Topps_Chrome" value="Topps_Chrome">
+            <label for="Topps_Chrome">Topps Chrome</label><br>
+
+            <input type="checkbox" id="Topps_Heritage" name="Topps_Heritage" value="Topps_Heritage">
+            <label for="Topps_Heritage">Topps Heritage</label><br>
+
+            <input type="checkbox" id="Stadium_Club" name="Stadium_Club" value="Stadium_Club">
+            <label for="Stadium_Club">Stadium Club</label><br>
+
+            <br>
+
+            <h3>Card Types</h3>
+            <input type="checkbox" id="Autographs" name="Autographs" value="Autographs">
+            <label for="Autographs">Autograph Cards</label><br>
 
             <input type="checkbox" id="Rookie_Cards" name="Rookie_Cards" value="Rookie_Cards">
             <label for="Rookie_Cards">Rookie Cards</label><br>
 
-            <input type="checkbox" id="Autographs" name="vehicle1" value="Bike">
-            <label for="vehicle1">Autographs</label><br>
+            <input type="checkbox" id="Serial" name="Serial" value="Serial">
+            <label for="Serial">Serial Numbered Cards</label><br>
 
-            <input type="checkbox" id="Bowman" name="vehicle1" value="Bike">
-            <label for="vehicle1">Bowman</label><br>
+            <input type="checkbox" id="Relic" name="Relic" value="Relic">
+            <label for="Relic">Relic Cards</label><br>
 
-            <input type="checkbox" id="Serial" name="vehicle1" value="Bike">
-            <label for="vehicle1">Serial Numbered Cards</label><br>
+            <br>
 
-            <input type="checkbox" id="Stadium Club" name="vehicle1" value="Bike">
-            <label for="vehicle1">Stadium Club</label><br>
+            <h3>MLB Top 100 Players</h3>
+            <input type="checkbox" id="Top100_2021" name="Top100_2021" value="Top100_2021">
+            <label for="Top100_2021">2021</label><br>
 
-            <input type="checkbox" id="MLBTop100_2020" name="vehicle1" value="Bike">
-            <label for="vehicle1">MLB Top 100 - 2020</label><br>
+            <input type="checkbox" id="MLBTop100_2020" name="MLBTop100_2020" value="MLBTop100_2020">
+            <label for="MLBTop100_2020">2020</label><br>
 
-            <input type="checkbox" id="Top100_2021" name="vehicle1" value="Bike">
-            <label for="vehicle1">MLB Top 100 - 2021</label><br>
+            <br>
 
-            <input type="checkbox" id="Yearbooks" name="vehicle1" value="Bike">
-            <label for="vehicle1">Yearbooks</label><br>
+            <h3>Twins Publications</h3>
+            <input type="checkbox" id="Yearbooks" name="Yearbooks" value="Yearbooks">
+            <label for="Yearbooks">Yearbooks</label><br>
 
-            <input type="checkbox" id="Programs" name="vehicle1" value="Bike">
-            <label for="vehicle1">All Star/World Series Programs</label><br>
+            <input type="checkbox" id="Programs" name="Programs" value="Programs">
+            <label for="Programs">All Star/World Series Programs</label><br>
 
-            <input type="checkbox" id="Press_Pins" name="vehicle1" value="Bike">
-            <label for="vehicle1">Press Pins</label><br>
+            <input type="checkbox" id="Press_Pins" name="Press_Pins" value="Press_Pins">
+            <label for="Press_Pins">Press Pins</label><br>
 
           </section>
 
@@ -58,36 +88,11 @@
 
               <h1>Hello</h1>
 
+              <p>
+                
+              </p>
+
             </section>
-      
-      
-      <!-- <?php
-      $servername = "localhost";
-      $username = "root";
-      $password = "eeF99vzpg4TV";
-      $dbname = "Cards";
-      
-      // Create connection
-      $conn = new mysqli($servername, $username, $password, $dbname);
-      // Check connection
-      if ($conn->connect_error) {
-          die("Connection failed: " . $conn->connect_error);
-      } 
-      
-      $sql = "SELECT Player.Player_ID, Player.First_Name, Player.Last_Name FROM Cards";
-      $result = $conn->query($sql);
-      
-      if ($result->num_rows > 0) {
-          // output data of each row
-          while($row = $result->fetch_assoc()) {
-              echo "<br> id: ". $row["Player.Player_ID"]. " - Name: ". $row["First_Name"]. " " . $row["Last_Name"] . "<br>";
-          }
-      } else {
-          echo "0 results";
-      }
-      
-      $conn->close();
-      ?>  -->
       
         <footer>
 

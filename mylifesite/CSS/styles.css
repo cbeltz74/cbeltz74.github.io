@@ -1,0 +1,18 @@
+* {
+    padding:0;
+    margin:.5vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 8vh;
+}
+
+h2 {
+    font-size: 3vh;
+    padding: 0.5vh 0 0 0;
+}
+
+p {
+    padding: 0 0 0 1vw;
+}
