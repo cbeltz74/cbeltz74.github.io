@@ -6,6 +6,7 @@
 
 h1 {
     font-size: 8vh;
+    text-align: center;
 }
 
 h2 {
@@ -15,4 +16,30 @@ h2 {
 
 p {
     padding: 0 0 0 1vw;
+}
+
+ul {
+    padding:0 0 0 3vw;
+}
+
+.morning {
+    padding-left:5vw;
+}
+
+.day {
+    padding-left:10vw;
+    margin:2vw;
+}
+
+.night {
+    padding-left:5vw;
+}
+
+.big {
+    font-size:1.5vw;
+}
+
+.bigger {
+    font: size 1.75vw;
+    font-weight: 900;
 }
