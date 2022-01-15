@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    <title>Getting Started with Javascript</title>
+
+    <style>
+        body {padding: 30px;}
+
+        .jumbo {
+            margin:auto;
+            width:50vw;
+            background-color: rgb(192, 189, 189);
+            padding: 2em;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+      
+    <div class = "jumbo">
+        <button type="button" class="btn btn-danger" onclick="saySomthing('this is the first button')">My Button</button>
+        <button type="button" class="btn btn-danger" onclick="saySomthing('this is the second button')">My 2nd Button</button>
+    </div>
+    <script>
+
+        function saySomthing(message = 'goodbye', whisper = false) {
+            if (whisper) {
+                console.log(`%c${message}`, 'font-size:5px');
+            } else {
+                console.log(message);
+            }
+        }
+
+        saySomthing('hello', true);
+
+        saySomthing('my name is colin', true);
+
+        saySomthing('hello');
+
+
+        // function squared(a) {
+        //     return a * a;
+        // }
+
+        // const newSquared = squared(3);
+        // console.log(newSquared);
+
+            // Functions can be used as a variable
+
+        // const squared = function(a) {
+        //     return a * a;
+        // }
+
+        const squared = (a) => {
+            return a * a;
+        }
+
+       const otherSquared = squared;
+
+
+       // Arrow Functions
+
+
+
+    </script>
+
+</body>
+</html>

@@ -77,24 +77,30 @@
 
         // do while loop
 
-        let i = 0;
+        // let i = 0;
 
-        do {
+        // do {
+                // // grab the dog
+                // const dog = dogs[i];
+                // const dogData = document.createElement('div');
+                // dogData.classList.add('jumbo', 'text-center');
+                // dogData.innerText = `${dog.name} is a ${dog.type}`;
+                // dogsList.appendChild(dogData);
+                // i++;
+                
+        //     } while (i < dogs.length);
+
+
+        // for of iteration (new is ES6)
+
+            for (let dog of dogs) {
                 // grab the dog
-                const dog = dogs[i];
                 const dogData = document.createElement('div');
                 dogData.classList.add('jumbo', 'text-center');
                 dogData.innerText = `${dog.name} is a ${dog.type}`;
                 dogsList.appendChild(dogData);
-                i++;
-                
-            } while (i < dogs.length);
+            }
 
-
-        // for each iteration (new is ES6)
-
-
-        
 
     </script>
 
