@@ -1,0 +1,25 @@
+* {
+    padding:0;
+    margin:0;
+}
+
+.main {
+    text-align: center;
+    height: 100vh;
+    margin: 25% auto 25% auto;
+}
+
+header {
+    margin-bottom:1.5rem;
+    font-size:4rem;
+}
+
+.questions p {
+    font-size:1.5rem;
+    margin-bottom:1.25rem;
+}
+
+.inputs {
+    margin-bottom:1rem;
+}
+

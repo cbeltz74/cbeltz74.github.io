@@ -1,0 +1,1 @@
+var dateControl = document.querySelector('input[type="date"]');
