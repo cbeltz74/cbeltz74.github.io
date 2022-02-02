@@ -63,7 +63,7 @@
             const quantityInput = document.querySelector('[name=quantity]');
             const total = document.querySelector('.total');
             // const quantityLabel = document.querySelector('quantity-label');
-            const quantityLabel = document.querySelector('quantity-label');
+            const quantityLabel = document.querySelector('.quantity-label');
 
 
         // create the functions that we'll need
@@ -74,11 +74,6 @@
                 const cost = price * quantity;
                 total.innerText = '$' + cost.toFixed(2);
             };
-
-            // function updateQuantityLabel() {
-            //     const quantity = quantityInput.value;
-            //     quantityLabel.innerText = quantity;
-            // };
 
             function updateQuantityLabel() {
                 const quantity = quantityInput.value;

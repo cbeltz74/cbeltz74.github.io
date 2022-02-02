@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/paydayStyles.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<section class="main">
+    <article class="questions">
+        <header>
+            <h1>Is It Payday Yet?</h1>
+        </header>
+
+        <p>
+            A quick way to check if today is payday!
+        </p>
+
+        <form id="payForm" method="GET">
+            <label for="lastPayDay">Enter date of last pay date:</label><br>
+            <input type="date" id="lastPayDay" name="lastPayDay" value="2021-01-14" min="2021-01-01" max="2022-12-31" class="inputs">
+            <br>
+            <label for="frequency">How often do  you get paid?</label><br>
+            <select name="frequency" id="frequency" class="inputs">
+                <option value="">Select</option>
+                <option value="weekly">Weekly</option>
+                <option value="twoweeks">Every other week</option>
+                <option value="monthly">Monthly</option>
+                <option value="quarterly">Quarterly</option>
+                <option value="yearly">Yearly</option>
+            </select>    
+            <br>
+            <!-- <input type="button" onclick="myFunction()" value="Submit"> -->
+        </form>
+
+    </article>
+
+        <section="answer">
+            <p></p>
+        </section=>
+
+</section>
+
+<script src="JS/payday.js"></script>
+</body>
+</html>
