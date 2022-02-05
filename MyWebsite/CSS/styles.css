@@ -9,15 +9,78 @@
 } */
 
 
-.index_background {
-    background-image: url(https://cbeltz74.github.io/MyWebsite/images/baseball_background_blur.jpeg);
-    background-repeat: no-repeat;
+
+
+.section_headlines {
+    background-image: url(https://cbeltz74.github.io/MyWebsite/images/baseball_background_blur.jpeg);    background-color: #cccccc;
+    width: 100vw;
+    height:50vh;
     background-position: center;
-    background-size:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: hsla(197, 100%, 50%, 0.548);
+    text-align: center;
 }
+
+.project_headlines {
+        background-image: url(https://cbeltz74.github.io/MyWebsite/images/baseball_background_blur.jpeg);    background-color: #cccccc;
+        width: 100vw;
+        height:50vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        text-align: center;
+}
+
+.career_headlines {
+    background-image: url(https://cbeltz74.github.io/MyWebsite/images/baseball_background_blur.jpeg);    background-color: #cccccc;
+    width: 100vw;
+    height:100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: hsla(197, 100%, 50%, 0.548);
+    text-align: center;
+}
+
+.photography_headlines {
+    /* background-image: url(https://cbeltz74.github.io/MyWebsite/images/baseball_background_blur.jpeg);    background-color: #cccccc; */
+    width: 100vw;
+    height:100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    background-color: hsla(41, 81%, 50%, 0.548);
+}
+
+.interest_headlines {
+    background-image: url(https://cbeltz74.github.io/MyWebsite/images/baseball_background_blur.jpeg);    background-color: #cccccc;
+    width: 100vw;
+    height:100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: hsla(197, 100%, 50%, 0.548);
+    text-align: center;
+}
+
 
 .index-nav {
     background-color: rgba(0, 129, 32, 0.397);
+}
+
+.index-photos {
+    display: flex;
+}
+
+.index-thumb {
+    width:65%;
 }
 
 .navigation {
@@ -30,30 +93,33 @@
     margin: 0rem 30rem 0rem 0rem;
 }
 
+/* .section_headlines {
+    background-image: url(https://cbeltz74.github.io/MyWebsite/images/baseball_background_blur.jpeg);    background-color: #cccccc;
+    width: 100vw;
+    height:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: hsla(197, 100%, 50%, 0.548);
+    text-align: center;
+} */
 
-
-.section_headlines {
-    /* text-align: center;
-    margin-top:10%;
-    width:100%; */
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.section-name {
+    font-size: 7vw;
     color:white;
 }
 
-.section-name {
-    font-size: 4rem;
-}
-
 .section-position {
-    font-size:1.5rem;
+    font-size:3.5vw;
     font-weight: 700;
+    color:white;
 }
 
 .section-position2 {
+    font-size: 3vw;
     font-weight: 100;
+    color:white;
 }
 
 .header-title {
@@ -124,7 +190,7 @@ a:hover {
 nav {
     text-align: center;
     border-bottom:1px solid black;
-    margin-bottom:1rem;    
+    /* margin-bottom:1rem;     */
 }
 
 nav ul {
@@ -143,13 +209,13 @@ nav li {
     font-weight: 800;
     padding:0.5rem;
     border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 nav li:hover {
-    background-color:white;
+    background-color: rgba(255, 255, 255, 0.397);
     color: black;
-
+    transition: .5s;
   }
 
   hr {
@@ -206,7 +272,7 @@ article li {
 
 .description:hover {
     visibility:visible;
-    
+
 }
 
 .horizontal:hover {
@@ -446,6 +512,38 @@ button:hover {
     text-decoration: none;
     font-size:2rem;
 }
+
+@media only screen and (max-width: 850px) {
+    .index-nav {
+        flex-direction: column;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+  }
+
+
+@media only screen and (max-width: 600px) {
+    .index-nav {
+        flex-direction: column;
+    }
+
+    .section-name {
+        font-size:10vw;
+    }
+
+    .section-position, .section-position2 {
+        font-size:5vw;
+    }
+
+  }
+
 
 
 
