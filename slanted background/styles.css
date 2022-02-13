@@ -1,12 +1,83 @@
-/* Center the content */
-align-items: center;
-display: flex;
-flex-direction: column;
-justify-content: center;
+* {
+    padding:0;
+    margin:0;
+}
 
-/* Take full size */
-height: 100vh;
-width: 100%;
+container {
+    /* Used to position the diagonal area */
+    position: relative;
+}
 
-/* Background */
-background: url('../') center center / cover no-repeat;
+.container__diagonal {
+
+    /* Absolute position */
+    left: 0px;
+    position: absolute;
+    top: 0px;
+
+    /* Take full size */
+    height: 100%;
+    width: 100%;
+
+    /* Create diagonal sides */
+    transform: skewY(-5deg);
+
+    /* Background color */
+    background-color: rgba(0, 0, 0, 0.3);
+
+    /* Displayed under the main content */
+    z-index: -1;
+}
+
+h1, p {
+    /* text-align:center; */
+    /* transform: skewY(5deg); */
+}
+
+h1 {
+    font-size:4rem;
+    text-align: center;
+    margin-bottom:2vh;
+}
+
+h2 {
+    font-size:3rem;
+    text-align:center;
+    margin-bottom:2vh;
+}
+
+p {
+    font-size: 2rem;
+    padding: 0 15%;
+}
+
+li {
+    font-size: 2rem;
+}
+
+.container, .container2, .container3, .container4 {
+    /* Center the content */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Take full size */
+    height: 100vh;
+    width: 100%;
+
+    /* Background */
+    background-color: lightblue;
+    }
+
+    .container2 {
+        background-color:white;
+    }
+
+    .container3 {
+        background-color:beige;
+    }
+
+    .container4 {
+        background-color:lavender;
+    }
