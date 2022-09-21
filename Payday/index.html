@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/paydayStyles.css">
+    <link rel=“shortcut icon” href=“#”/>
     <title>Document</title>
 </head>
 <body>
@@ -20,10 +21,10 @@
         </p>
 
         <form id="payForm" method="GET">
-            <label for="lastPayDay">Enter date of last pay date:</label><br>
-            <input type="date" id="lastPayDay" name="lastPayDay" value="2021-01-14" min="2021-01-01" max="2022-12-31" class="inputs">
+            <label for="lastPayday">Enter date of last pay date:</label><br>
+            <input type="date" id="lastPayday" name="lastPayday" min="2022-01-01" max="2022-12-23" class="inputs">
             <br>
-            <label for="frequency">How often do  you get paid?</label><br>
+            <label for="frequency">How often do you get paid?</label><br>
             <select name="frequency" id="frequency" class="inputs">
                 <option value="">Select</option>
                 <option value="weekly">Weekly</option>
@@ -33,8 +34,16 @@
                 <option value="yearly">Yearly</option>
             </select>    
             <br>
+            <input id="submit_button" onclick="myFunction()" value="Submit">
+
             <!-- <input type="button" onclick="myFunction()" value="Submit"> -->
         </form>
+
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <!-- <p id="demo4"></p> -->
+
 
     </article>
 

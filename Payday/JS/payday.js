@@ -1,61 +1,43 @@
-// lastPayDay input
-const p = document.getElementById('lastPayDay');
-
-const f = document.getElementById('frequency');
+// let lastPayday;
+// let frequency;
 
 
-console.log(p);
-const frequency = f.value;
+function myFunction() {
+    lastPayday = document.getElementById("lastPayday").value;
+    document.getElementById("demo").innerHTML = lastPayday;
 
-
-p.addEventListener('change', nextDate);
-f.addEventListener('change', nextDate);
-
-
-// //     document.addEventListener("input");
-
-
-    function nextDate() {
-
-        const lastPayDate = p.value;
-        const frequency = f.value;
-
-        let weekly = lastPaydate + 7;
-        let twoweeks = lastPaydate + 14;
-        let monthly = lastPaydate + 30;
-        let yearly = lastPaydate + 365;
-        
-        if (frequency.value == weekly) {
-            const nextPaydate = new Date();
-            d.setDate(d.getDate() + weekly);
-            document.write("answer").innerText = d;
-        } else if (frequency.value  == twoweeks) {
-            const nextPaydate = new Date();
-            d.setDate(d.getDate() + twoweeks);
-            document.write("answer").innerText = d;
-        } else if (frequency.value  == monthly) {
-            const nextPaydate = new Date();
-            d.setDate(d.getDate() + monthly);
-            document.write("answer").innerText = d;
-        } else if (frequency.value  == yearly) {
-            const nextPaydate = new Date();
-            d.setDate(d.getDate() + yearly);
-            document.write("answer").innerText = d;
-        }
-    }
-            // function whenIsNextPayDay() {
-            // take date of last payday and frequency and compare to today Date
-            // provide answwer based on how many days since user was paid and how many days until the next pay date.
-
-            // if 1-3 days away from next payday, state it getting closer or something.
-
-            // if 4-7 days away, state a ways to go
-
-            // if 9-13 days, have snarky or comforting message.
-
-            //     Your next payday is .... then message.
+    frequency = document.getElementById("frequency").value;
+    document.getElementById("demo2").innerHTML = frequency;
 
 
 
-            // console.log('lastPaydate');
-            // console.log('frequency');
+    const d = new Date();
+    const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    let date = d.getDate();
+    let monthName = month[d.getMonth()];
+    let year = d.getYear();
+
+    let todaysDate = monthName + " " + date + ", " + year;
+
+
+
+    document.getElementById("demo3").innerHTML = todaysDate;
+
+
+  }
+
+
+// function myFunction () {
+//     lastPaydayAnswer = document.getElementById("lastPayday").value;
+// 	frequencyAnswer = document.getElementById("frequency").value;
+// }
+/* 
+
+const date1 = new Date('10/18/2022');
+const date2 = new Date('10/23/2022');
+const diffTime = Math.abs(date2 - date1);
+const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+console.log(diffTime + " milliseconds");
+console.log(diffDays + " days");
+
+*/
